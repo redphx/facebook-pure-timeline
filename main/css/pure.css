@@ -1,0 +1,11 @@
+div[id^=topnews_main_stream], div[id^=mostrecent_main_stream], div[id^=pagelet_home_stream] {
+  visibility: hidden !important;
+  overflow: hidden !important;
+  height: 0px !important;
+}
+
+.pure-message {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "$EXTENSION_NAME",
+  "short_name": "$EXTENSION_NAME",
+  "description": "$EXTENSION_DESCRIPTION",
+  "version": "$EXTENSION_VERSION",
+  "author": "$EXTENSION_AUTHOR",
+  "manifest_version": 2,
+  "icons": {
+    "16": "img/icon_16.png",
+    "48": "img/icon_48.png",
+    "128": "img/icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "run_at": "document_start",
+      "css": ["css/pure.css"],
+      "js": [
+        "js/content_scripts.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAobD76KSOk2DdZKBfuwk0DgtDTLWCnpX81hJo9DMZm7nqSGx/fuxzkgKDTRtEAK+JSc8aMR8A6ZpMWAqjclGg4xp5MsyTEyr0LnKXG8HAcSShdL20qjq4bZ9+gUiDUpnmNWa5ioPMeAtAONlkuCNMSswsWKfg9WtHmE8gdHJ1m6FMtTj+PJ1y9B7uja3HtZo2YnoB6mj0RXjQEEkFJ9THgMvcMEVasTecLdjfmcs8u3EsvYWOm7L7TsmDi1XGcS9dPPJtgyidBaiXEK2ZrU4swnKpe4IxXTjstDuK8X+ps6ppFSULsCr5K+1bfR7x+hbJAhU57oLin+nh8IpBLZgnqwIDAQAB"
+}
